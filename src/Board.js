@@ -190,7 +190,7 @@
     hasAnyMinorDiagonalConflicts: function() {
       var n = this.get('n');
       var clever =0;
-      for (; clever < n+2; clever ++ ) {
+      for (; clever < n+n-2; clever ++ ) {
         if ( this.hasMinorDiagonalConflictAt(clever) ) {
           return true;
         }
